@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+
+  crm.thermas.app:
+    build:
+      context: .
+    image: 'crm-thermas:production'
+    container_name: 'crm-thermas'
+    ports:
+      - '8002:80'
+    environment:
+      BUILD_ENV: 'production'

@@ -1,0 +1,38 @@
+{
+  "name": "thermas-quasar-app",
+  "version": "0.0.1",
+  "description": "Thermas Project",
+  "productName": "Thermas App",
+  "author": "Dobry <dobryct@gmail.com>",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js,.vue ./",
+    "format": "prettier --write \"**/*.{js,vue,scss,html,md,json}\" --ignore-path .gitignore",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "dependencies": {
+    "@carbon/icons-vue": "^10.49.1",
+    "@quasar/extras": "^1.15.3",
+    "@quasar/quasar-ui-qcalendar": "^4.0.0-beta.15",
+    "axios": "^0.21.1",
+    "luxon": "^2.4.0",
+    "pinia": "^2.0.11",
+    "quasar": "^2.7.1",
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.0",
+    "vue3-colorpicker": "^2.1.2"
+  },
+  "devDependencies": {
+    "@quasar/app-vite": "^1.0.1",
+    "autoprefixer": "^10.4.2",
+    "eslint": "^8.10.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-vue": "^8.5.0",
+    "prettier": "^2.5.1"
+  },
+  "engines": {
+    "node": "^18 || ^16 || ^14.19",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  }
+}

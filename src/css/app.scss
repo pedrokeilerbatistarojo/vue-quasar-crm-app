@@ -1,0 +1,112 @@
+// app global css in SCSS form
+table a,
+table a:visited {
+  color: $dark-blue;
+  text-decoration: none;
+}
+
+a.q-item {
+  padding: 20px;
+}
+
+.text-bronze {
+  color: $bronze !important;
+}
+.text-dark-blue {
+  color: $dark-blue !important;
+}
+.bg-bronze {
+  background: $bronze !important;
+}
+
+.bg-warning-row {
+  background: $warning-row !important;
+}
+
+//Layout Styles
+.side-menu-icon,
+.side-menu .q-expansion-item .q-icon {
+  color: $bronze;
+}
+
+.side-menu .q-expansion-item {
+  /* padding-left: 2px; */
+}
+
+.side-menu
+  .q-expansion-item
+  .q-item__section.column.q-item__section--side.justify-center.q-item__section--avatar
+  .q-icon:nth-child(1) {
+  font-size: 38px;
+}
+
+.side-menu .q-item--clickable {
+  display: flex;
+  align-items: center;
+}
+
+.q-item__section--avatar {
+  height: 16px;
+  width: auto;
+  padding: 0;
+  background: white;
+  border-radius: 4px;
+  min-width: unset;
+}
+
+.q-item__section--main {
+  margin-left: 12px;
+}
+
+.active-menu-item {
+  color: var(--q-primary);
+}
+// /Layout Styles
+
+//TABLE
+.q-table .q-icon:not(button.btn-expand *) {
+  color: $bronze;
+}
+
+.q-table__top,
+.q-table__bottom,
+thead tr:first-child th,
+thead tr:first-child th .q-icon {
+  /* bg color is important for th; just specify one */
+  background-color: #f2f2f2;
+}
+
+thead tr:first-child th .q-icon {
+  color: $bronze !important;
+}
+.my-sticky-header-table,
+.circuit-reservation-table {
+  /* height or max-height is important */
+  height: 70%;
+  border-top: 3px solid $bronze;
+
+  .q-table__top,
+  .q-table__bottom,
+  thead tr:first-child th {
+    /* bg color is important for th; just specify one */
+    background-color: #f2f2f2;
+    .q-icon {
+      color: $bronze;
+    }
+  }
+
+  thead tr th {
+    position: sticky;
+    z-index: 1;
+  }
+
+  thead tr:first-child th {
+    top: 0;
+  }
+
+  /* this is when the loading indicator appears */
+  &.q-table--loading thead tr:last-child th {
+    /* height of all previous header rows */
+    top: 48px;
+  }
+}
