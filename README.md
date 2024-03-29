@@ -1,6 +1,6 @@
-# Thermas App (thermas-quasar-app)
+# CRM App (vue-quasar-app)
 
-Thermas Project
+CRM Project
 
 ## Install the dependencies
 ```bash
